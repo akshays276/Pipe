@@ -1,17 +1,24 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
-import { MarvellousPipe } from '../marvellous.pipe';
-
 @Component({
   selector: 'app-demo',
   standalone: true,
-  imports: [CommonModule, MarvellousPipe],
+  imports: [CommonModule],
   templateUrl: './demo.component.html',
   styleUrl: './demo.component.css'
 })
 
 export class DemoComponent 
 {
+  name = "Marvellous Infosystems";
+  today = new Date();
+  no = 32.389;
 
+  constructor() { }
+
+  public Institute = 
+  {
+    "Name" : "Marvellous",
+    "Location" : "Pune"
+  }
 }
